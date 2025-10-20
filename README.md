@@ -63,3 +63,67 @@ AI StudyPal is a powerful Chrome extension that leverages Chrome's Built-in AI A
    ```bash
    git clone https://github.com/yourusername/ai-studypal.git
    cd ai-studypal
+   Enable Chrome Built-in AI:
+
+Navigate to chrome://flags/
+
+Search for "Built-in AI"
+
+Enable the experimental AI features
+
+Restart Chrome
+
+Load the extension:
+
+Open Chrome and go to chrome://extensions/
+
+Enable "Developer mode" in the top right
+
+Click "Load unpacked" and select the ai-studypal directory
+
+The extension icon should appear in your toolbar
+
+🎮 Usage
+Quick Start
+Navigate to any educational webpage (article, documentation, research paper)
+
+Click the AI StudyPal icon in your Chrome toolbar
+
+Choose your learning tool:
+
+📝 Summarize - Get instant summaries
+
+❓ Quiz - Generate interactive questions
+
+🌍 Translate - Convert to your preferred language
+
+✏️ Tools - Improve and transform text
+
+Feature Details
+Smart Summarization
+Click "Summarize Page" for instant bullet-point summary
+
+Customize format and length in the Summary tab
+
+Export summaries for your notes
+
+Quiz Generation
+Select question type (Multiple Choice, True/False, Flashcards)
+
+Choose difficulty level and number of questions
+
+Test your knowledge with instant feedback
+
+Translation
+Select source and target languages
+
+Get academically-appropriate translations
+
+Perfect for international research
+
+Writing Tools
+Paste text into the input area
+
+Choose from Proofread, Simplify, Expand, or Formalize
+
+Get improved text with explanations
