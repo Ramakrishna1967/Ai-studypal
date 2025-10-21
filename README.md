@@ -61,7 +61,7 @@ AI StudyPal is a powerful Chrome extension that leverages Chrome's Built-in AI A
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/ai-studypal.git
+   git clone https://github.com/Ramakrishna1967/ai-studypal.git
    cd ai-studypal
    ```
 
