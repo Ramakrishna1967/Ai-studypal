@@ -209,9 +209,7 @@ npm test
 - **Transparent Code**: Fully open-source for community verification
 - **Secure Permissions**: Minimal required permissions for functionality
 
-## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guidelines](docs/CONTRIBUTING.md) for details.
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -219,28 +217,8 @@ We welcome contributions! Please see our [Contributing Guidelines](docs/CONTRIBU
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🏆 Awards & Recognition
-
-Built for the **Google Chrome Built-in AI Challenge 2025**, this extension demonstrates cutting-edge use of client-side AI for education technology.
 
 
 
-## 🙏 Acknowledgments
-
-- **Google Chrome Team** for the Built-in AI APIs
-- **Gemini Nano** for on-device AI capabilities
-- **Open Source Community** for inspiration and tools
-
----
-
-<div align="center">
-
-**⭐ Star this repo if you find it helpful!**
-
-*Empowering learners worldwide with AI-powered education tools* 🎓
 
 
