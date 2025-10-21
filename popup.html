@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI StudyPal</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <h1>🧠 AI StudyPal</h1>
+                <p>Smart Learning Companion</p>
+            </div>
+        </div>
+
+        <!-- Tab Navigation -->
+        <div class="tab-nav">
+            <button class="tab-btn active" data-tab="summary">📝 Summary</button>
+            <button class="tab-btn" data-tab="quiz">❓ Quiz</button>
+            <button class="tab-btn" data-tab="translate">🌐 Translate</button>
+            <button class="tab-btn" data-tab="tools">🛠️ Tools</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Summary Tab -->
+            <div id="summary" class="tab-pane active">
+                <div class="section">
+                    <h3>Smart Summarization</h3>
+                    <div class="form-group">
+                        <label>Format:</label>
+                        <select id="summaryFormat">
+                            <option value="bullet_points">Bullet Points</option>
+                            <option value="paragraph">Paragraph</option>
+                            <option value="outline">Outline</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Length:</label>
+                        <select id="summaryLength">
+                            <option value="short">Short</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="long">Long</option>
+                        </select>
+                    </div>
+                    <button id="generateSummary" class="btn btn-primary">Generate Summary</button>
+                </div>
+                <div class="result-section">
+                    <div id="summaryResult" class="result-content"></div>
+                </div>
+            </div>
+
+            <!-- Quiz Tab -->
+            <div id="quiz" class="tab-pane">
+                <div class="section">
+                    <h3>Interactive Quiz Generator</h3>
+                    <div class="form-group">
+                        <label>Question Type:</label>
+                        <select id="quizType">
+                            <option value="multiple_choice">Multiple Choice</option>
+                            <option value="true_false">True/False</option>
+                            <option value="flashcards">Flashcards</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Difficulty:</label>
+                        <select id="quizDifficulty">
+                            <option value="easy">Easy</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Number of Questions:</label>
+                        <input type="number" id="quizCount" value="5" min="1" max="20">
+                    </div>
+                    <button id="generateQuiz" class="btn btn-primary">Generate Quiz</button>
+                </div>
+                <div class="result-section">
+                    <div id="quizResult" class="result-content"></div>
+                </div>
+            </div>
+
+            <!-- Translate Tab -->
+            <div id="translate" class="tab-pane">
+                <div class="section">
+                    <h3>Page Translation</h3>
+                    <div class="form-group">
+                        <label>Source Language:</label>
+                        <select id="sourceLanguage">
+                            <option value="auto">Auto-detect</option>
+                            <option value="en">English</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                            <option value="de">German</option>
+                            <option value="zh">Chinese</option>
+                            <option value="ja">Japanese</option>
+                            <option value="ko">Korean</option>
+                            <option value="hi">Hindi</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Target Language:</label>
+                        <select id="targetLanguage">
+                            <option value="en" selected>English</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                            <option value="de">German</option>
+                            <option value="zh">Chinese</option>
+                            <option value="ja">Japanese</option>
+                            <option value="ko">Korean</option>
+                            <option value="hi">Hindi</option>
+                        </select>
+                    </div>
+                    <button id="translatePage" class="btn btn-primary">Translate Page</button>
+                </div>
+                <div class="result-section">
+                    <div id="translateResult" class="result-content"></div>
+                </div>
+            </div>
+
+            <!-- Tools Tab -->
+            <div id="tools" class="tab-pane">
+                <div class="section">
+                    <h3>Writing Tools</h3>
+                    <div class="form-group">
+                        <label>Action:</label>
+                        <select id="toolAction">
+                            <option value="proofread">Proofread & Correct</option>
+                            <option value="simplify">Simplify Text</option>
+                            <option value="expand">Expand Text</option>
+                            <option value="formalize">Make Academic</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Input Text:</label>
+                        <textarea id="toolInput" placeholder="Paste your text here..." rows="6"></textarea>
+                    </div>
+                    <button id="processText" class="btn btn-primary">Process Text</button>
+                </div>
+                <div class="result-section">
+                    <div id="toolResult" class="result-content"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Overlay -->
+        <div id="loadingOverlay" class="loading-overlay hidden">
+            <div class="loading-spinner"></div>
+            <p>Processing with AI...</p>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
